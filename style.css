@@ -1,0 +1,635 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    list-style: none;
+    display: inline-flex;
+    margin-left: 50%;
+}
+nav ul li{
+    margin-left: 15%;
+    padding: 0 15px;
+    color: white;
+}
+a{
+    text-decoration:none;
+    color: white;
+}
+header{
+    background-color: #190019;
+}
+.firstbg{
+    position: relative;
+}
+.brand1{
+    position: absolute;
+    top:50px;
+    left:45%;
+}
+.brand2{
+    position: absolute;
+    top:100px;
+    left:36%;
+}
+.brand3{
+    position: absolute;
+    top:140px;
+    left:34%;
+}
+.brand4{
+    position: absolute;
+    top:50%;
+    left:40%;
+}
+.brand5 img{
+    position: absolute;
+    top:60%;
+    left:50px;
+    border-radius: 10px;
+    border: 3px solid #2b203d;
+}
+.brand6 img{
+    position: absolute;
+    top:60%;
+    left: 550px;
+    border-radius: 10px;
+    border: 3px solid #2b203d;
+}
+.brand7 img{
+    position: absolute;
+    top:60%;
+    left:1050px;
+    border-radius: 10px;
+    border: 3px solid #2b203d;
+}
+.brand5 h3{
+    position: absolute;
+    top:90%;
+    left:180px;
+}
+.brand6 h3{
+    position: absolute;
+    top:90%;
+    left:710px;
+}
+.brand7 h3{
+    position: absolute;
+    top:90%;
+    left:1200px;
+}
+footer .foot{
+    position: relative;
+    top:100px;
+    background-color: #190019;
+    color: white;
+}
+footer .foot i{
+    padding: 20px 0px 20px 50px;
+}
+footer .foot .statement{
+    padding: 0px 800px 0px 50px;
+}
+footer .foot .copyright{
+    padding: 20px 0px;
+    background-color: #3a013a;
+}
+footer .foot .details{
+    position: absolute;
+    top: 40px;
+    padding: 0px 10px 50px 1000px;
+}
+a:hover{
+    color: rgb(104, 102, 102);
+}
+.buy-sell p{
+    padding: 0px 300px;
+}
+.grid{
+    margin: 0px 150px;
+    display: grid;
+    gap:20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    background-color: rgb(149, 145, 145);
+}
+
+/* animation  */
+
+.brand1, .brand2, .brand3 {
+    position: absolute;
+    animation: fadeInUp 2s ease forwards;
+    opacity: 0;
+}
+.brand1 { top: 50px; left: 45%; animation-delay: 0.3s; }
+.brand2 { top: 100px; left: 36%; animation-delay: 0.6s; }
+.brand3 { top: 140px; left: 34%; animation-delay: 0.9s; }
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* transition  */
+.brand5 img, .brand6 img, .brand7 img {
+    position: absolute;
+    top: 60%;
+    border-radius: 10px;
+    border: 3px solid #2b203d;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.brand5 img:hover, .brand6 img:hover, .brand7 img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+}
+
+.brand5 img { left: 50px; }
+.brand6 img { left: 550px; }
+.brand7 img { left: 1050px; }
+
+/* mobile view */
+
+@media (max-width: 468px) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav img {
+        width: 120px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+        padding: 0;
+    }
+
+    .firstbg .bg {
+        height: auto;
+    }
+
+    .brand1,
+    .brand2,
+    .brand3,
+    .brand4 {
+        position: static;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .brand4 h1 {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .brand5 img,
+    .brand6 img,
+    .brand7 img {
+        position: static;
+        width: 90%;
+        height: auto;
+        margin: 15px auto;
+        display: block;
+    }
+
+    .brand5 h3,
+    .brand6 h3,
+    .brand7 h3 {
+        position: static;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .buy-sell h1 {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    .buy-sell p {
+        padding: 0 15px;
+        text-align: justify;
+    }
+
+    .grid {
+        margin: 10px;
+        padding: 10px;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .our-services p,
+    .our-services h2 {
+        text-align: center;
+    }
+
+    footer .foot {
+        padding: 10px;
+    }
+
+    footer .foot .icon {
+        text-align: center;
+    }
+
+    footer .foot i {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    footer .logofooter img {
+        width: 120px;
+        display: block;
+        margin: 10px auto;
+    }
+
+    footer .foot .statement {
+        padding: 10px;
+        text-align: justify;
+    }
+
+    footer .foot .details {
+        position: static;
+        padding: 10px;
+        text-align: left;
+    }
+
+    footer .foot .copyright h2 {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+/* Tablet View */
+/* @media (max-width: 768px){
+    * {
+        padding: 0;
+        margin: 0;
+        font-size: 20px;
+        box-sizing: border-box;
+    }
+    nav {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+    nav img {
+        margin: 0 auto 15px;
+    }
+    nav ul {
+        margin: 0 auto;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+    }
+    nav ul li {
+        margin: 0 10px;
+        padding: 5px 0;
+    }
+    .firstbg .bg {
+        height: 1000px;
+        object-fit: cover;
+    }
+    .brand1 {
+        position: absolute;
+        top: 65px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2.5rem;
+        text-align: center;
+        width: 100%;
+    }
+    .brand2 {
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.5rem;
+        text-align: center;
+        width: 100%;
+    }
+    .brand3 {
+        position: absolute;
+        top: 140px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.1rem;
+        text-align: center;
+        width: 90%;
+    }
+    .brand4 {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        text-align: center;
+    }
+    .brand5, .brand6, .brand7 {
+        position: absolute;
+        width: 30%;
+        text-align: center;
+    }
+    .brand5 {
+        left: 10px;
+        top: 90%;
+    }
+    .brand6 {
+        left: 1%;
+        top: 90%;
+    }
+    .brand7 {
+        left: 0%;
+        top: 90%;
+    }
+    .brand5 img{
+        left:10px;
+        top:-150px;
+
+    }
+    .brand6 img{
+        left:260px;
+        top:-150px;
+
+    }
+    .brand7 img{
+    left:520px;
+    top: -150px;
+    }
+
+    .brand5 img, 
+    .brand6 img, 
+    .brand7 img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .buy-sell {
+        padding: 40px 20px;
+    }
+    .buy-sell p {
+        padding: 0 50px;
+    }
+    .grid {
+        margin: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    .grid3 {
+        grid-column: span 2;
+    }
+    footer .foot {
+        padding: 30px 20px;
+    }
+    footer .foot .statement {
+        padding: 0 20px 20px;
+    }
+    footer .foot .details {
+        position: static;
+        padding: 20px;
+    }
+    footer .foot .icon {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    footer .foot i {
+        margin: 0 15px;
+    }
+    footer .logofooter {
+        text-align: center;
+        margin: 20px 0;
+    }
+} */
+/* Large Screen View */
+/* @media (max-width: 1024px) {
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        overflow-x: hidden;
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+    nav {
+        font-size: 25px;
+        padding: 25px 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav ul {
+        margin-left: 0;
+        display: flex;
+        gap: 2rem;
+    }
+    
+    nav ul li {
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .firstbg {
+        height: 100vh;
+        min-height: 800px;
+        max-height: 1200px;
+        position: relative;
+    }
+    
+    .firstbg .bg {
+        height: 1300px;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .brand1 {
+        font-size: 1.2rem;
+        top: 8%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+    }
+    
+    .brand2 {
+        font-size: 1.3rem;
+        top: 13%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        text-align: center;
+    }
+    
+    .brand3 {
+        font-size: 1.5rem;
+        top: 18%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+        text-align: center;
+    }
+    
+    .brand4 {
+        top: 106%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+        text-align: center;
+    }
+    
+    .brand5, .brand6, .brand7 {
+        width: 28%;
+        max-width: 400px;
+        position: absolute;
+        top: 115%;
+        text-align: center;
+    }
+    
+    .brand5 img, 
+    .brand6 img, 
+    .brand7 img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+        border-radius: 10px;
+        border: 3px solid #2b203d;
+    }
+    
+    .brand5 h3, 
+    .brand6 h3, 
+    .brand7 h3 {
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .buy-sell {
+        padding: 5% 15%;
+        text-align: center;
+    }
+    
+    .buy-sell h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .buy-sell p {
+        padding: 0 10%;
+        font-size: 2rem;
+        line-height: 1.8;
+    }
+    
+    .our-services {
+        text-align: center;
+        padding: 0 5% 5%;
+        font-size: 28px;
+    }
+    
+    .grid {
+        margin: 0 5% 5%;
+        gap: 2rem;
+        padding: 3rem;
+        background-color: rgba(149, 145, 145, 0.7);
+        font-size: 28px;
+    }
+    
+    .grid1, .grid2, .grid3 {
+        padding: 2rem;
+        background-color: white;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+    
+    footer .foot {
+        padding: 5% 10%;
+        display: grid;
+        grid-template-areas:
+            "logo logo"
+            "social social"
+            "statement details"
+            "copyright copyright";
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    footer .logofooter {
+        grid-area: logo;
+        text-align: center;
+    }
+
+    footer .foot .icon {
+        grid-area: social;
+        text-align: center;
+    }
+
+    footer .foot .statement {
+        grid-area: statement;
+        padding-right: 2rem;
+        font-size: 1.5rem;
+        line-height: 1.8;
+    }
+
+    footer .foot .details {
+        grid-area: details;
+        padding-left: 2rem;
+        font-size: 1.5rem;
+        margin-top: -30px;
+    }
+
+    footer .foot .copyright {
+        grid-area: copyright;
+        padding: 1.5rem 0;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    footer .foot i {
+        font-size: 3rem;
+        margin: 0 1.25rem;
+        transition: all 0.3s ease;
+    }
+
+    footer .foot i:hover {
+        color: #a78bfa;
+        transform: translateY(-3px);
+    }
+    
+} */

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aboutus</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    *
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #4d0c4d8f;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    list-style: none;
+    display: inline-flex;
+    margin-left: 50%;
+}
+nav ul li{
+    margin-left: 15%;
+    padding: 0 15px;
+    color: white;
+}
+a{
+    text-decoration:none;
+    color: white;
+}
+header {
+    background-color: #190019;
+    position: static; 
+}
+footer .foot{
+    position: absolute;
+    top: 800px;
+    background-color: #190019;
+    color: white;
+}
+footer .foot i{
+    padding: 20px 0px 20px 50px;
+}
+footer .foot .statement{
+    padding: 0px 800px 0px 50px;
+}
+footer .foot .copyright{
+    padding: 20px 0px;
+    background-color: #3a013a;
+}
+footer .foot .details{
+    position: absolute;
+    top: 40px;
+    padding: 0px 10px 50px 1000px;
+}
+a:hover{
+    color: rgb(104, 102, 102);
+}
+.content1{
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    }
+.content2{
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+
+}
+.vision img,.mission img{
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+}
+.vision h2,.mission h2{
+    font-size:xx-large;
+}
+@media (max-width: 468px) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav img {
+        width: 120px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+        padding: 0;
+    }
+
+    footer .foot {
+        padding: 10px;
+        top:1250px;
+    }
+
+    footer .foot .icon {
+        text-align: center;
+    }
+
+    footer .foot i {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    footer .logofooter img {
+        width: 120px;
+        display: block;
+        margin: 10px auto;
+    }
+
+    footer .foot .statement {
+        padding: 10px;
+        text-align: justify;
+    }
+
+    footer .foot .details {
+        position: static;
+        padding: 10px;
+        text-align: left;
+    }
+
+    footer .foot .copyright h2 {
+        font-size: 14px;
+        text-align: center;
+    }
+    .content1,
+    .content2 {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .vision,
+    .mission {
+        text-align: center;
+    }
+
+    .vision img,
+    .mission img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+}   
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo.png" width="200px" height="60px">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Properties.html">Properties</a></li>
+                <li><a href="Aboutus.html">Aboutus</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header><br>
+        <div class="content1">
+        <div class="vision">
+        <img src="vision.jpeg">
+        </div>
+        <div class="vision">
+        <h2>Our Vision</h2>
+        <p>
+        Our vision is to meet the highest standards in the real estate market by helping you find your dream property. We are a group of young champs, known for our in-depth knowledge of the marketplace and our unparalleled dedication to customers.
+
+        B KEY REALTORS believes that it is necessary to offer a quality service in order to establish relations with customers and, most importantly, to preserve these relations by communicating effectively.
+        </p>
+        </div>
+        </div>
+    <br>
+    <div class="content2">
+    <div class="mission">
+        <img src="mission.jpeg">
+    </div>
+    <div class="mission">
+        <h2>Our Mission</h2>
+        <P>
+        Our Mission is to create a win-win relationship with every customer. We believe in providing you with value and resources. We love our clients. You deserve a team of professionals that are focused on your goals.
+
+        B KEY REALTORS is a well-established professional group of real estate experts with the ability to deliver a transparent property buying, selling and living solutions to the real estate needs of the buyers. Our sole mission is to provide our investors and tenants with high-level real estate solutions and services in a straightforward and pragmatic manner.
+        </P>
+    </div>
+    </div>
+    <footer>
+        <div class="foot">
+           <div class="icon">
+           <i class="fa-brands fa-instagram fa-2xl" style="color: #ffff;"></i>
+           <i class="fa-brands fa-square-facebook fa-2xl" style="color: #ffff;"></i>
+           <i class="fa-brands fa-youtube fa-2xl" style="color: #ffff;"></i>
+           </div>
+           <div class="logofooter">
+           <img src="logo.png" width="200px" height="60px">
+           </div>
+           <div class="statement">
+           <h3>B Key Realtors is an one stop Online Real Estate Agency in Coimbatore to find your best property in Coimbatore. Our repository of data and information associated with each property will assist you make a decision and purchase the same as your assets.</h3>
+           </div>
+           <div class="details">
+            <h3><strong>Contact Us</strong></h3>
+            <h3>📞 Phone: +91 XXXXX XXXXX</h3>
+            <h3>📧 Email: support@bkeyrealtors.com</h3>
+            <h3>📍 Address: 123, Real Estate Avenue, Coimbatore, TN - 6410XX</h3>
+            </div>
+            <div class="copyright">
+            <center>
+            <h2>Copyrights © 2025 All Rights Reserved</h2>
+            </center>
+           </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    *
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #4d0c4d8f;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    list-style: none;
+    display: inline-flex;
+    margin-left: 50%;
+}
+nav ul li{
+    margin-left: 15%;
+    padding: 0 15px;
+    color: white;
+}
+a{
+    text-decoration:none;
+    color: white;
+}
+header{
+    background-color: #190019;
+}
+footer .foot{
+    position: absolute;
+    top:1250px;
+    background-color: #190019;
+    color: white;
+}
+footer .foot i{
+    padding: 20px 0px 20px 50px;
+}
+footer .foot .statement{
+    padding: 0px 800px 0px 50px;
+}
+footer .foot .copyright{
+    padding: 20px 0px;
+    background-color: #3a013a;
+}
+footer .foot .details{
+    position: absolute;
+    top: 40px;
+    padding: 0px 10px 50px 1000px;
+}
+.form{
+    padding: 30px;
+    border-radius: 15px;
+    width: 500px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.form .grid2{
+    background-color: #60526062;
+    padding: 0px 20px;
+    border-radius: 10px;
+}
+.form .grid2 input{
+    margin:10px 0px;
+    border-radius: 3px;
+    border: none;
+}
+.form .grid2 button{
+    border-radius: 5px;
+    border:none;
+}
+.call{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.form button a{
+    color: black;
+}
+@media (max-width: 468px) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav img {
+        width: 120px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+        padding: 0;
+    }
+
+    footer .foot {
+        padding: 10px;
+        top: 900px;
+    }
+
+    footer .foot .icon {
+        text-align: center;
+    }
+
+    footer .foot i {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    footer .logofooter img {
+        width: 120px;
+        display: block;
+        margin: 10px auto;
+    }
+
+    footer .foot .statement {
+        padding: 10px;
+        text-align: justify;
+    }
+
+    footer .foot .details {
+        position: static;
+        padding: 10px;
+        text-align: left;
+    }
+
+    footer .foot .copyright h2 {
+        font-size: 14px;
+        text-align: center;
+    }
+    .call {
+        padding: 20px;
+        height: auto;
+    }
+
+    .form {
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .form .grid2,
+    .form .grid1 {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .form .grid2 input {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .form .grid2 label {
+        font-size: 14px;
+    }
+
+    .form .grid2 button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .radio-group {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+    
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo.png" width="200px" height="60px">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Properties.html">Properties</a></li>
+                <li><a href="Aboutus.html">Aboutus</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="call">
+        <div class="form">
+            <div class="grid1">
+                <center>
+                <h2>Have Questions?</h2>
+                <br><br>
+                <h3>Call us:</h3>
+                <p>+91 xxxxx xxxxx</p>
+                <br><br>
+                <h3>Email:</h3>
+                <p style="color:blue">bkeyreltors@gmail.com</p>
+                <br><br>
+                <p>“I would definitely recommend B Key Realtors Team to my friends and family.”</p>
+                </center>
+            </div>
+            <div class="grid2">
+                <form action="recorded.html">
+                    <input type="text" placeholder="First Name" required/>
+                    <input type="text" placeholder="Last Name" required/>
+                    <input type="email" placeholder="Enter your email" required/>
+                    <input type="tel" placeholder="Phone number" required/><br>
+                    <!-- <label>Best time to call?<span style="color: red;">*</span></label><br>
+                    <input type="radio">Today<br>
+                    <input type="radio">Tomorrow<br>
+                    <input type="radio">Weakend<br> -->
+                    <label>Best time to call?<span style="color: red;">*</span></label><br>
+                    <div class="radio-group">
+                    <label><input type="radio" name="callTime" value="today"> Today</label>
+                    <label><input type="radio" name="callTime" value="tomorrow"> Tomorrow</label>
+                    <label><input type="radio" name="callTime" value="weekend"> Weekend</label>
+                    </div>
+                    <center>
+                    <button>Submit</button>
+                    </center>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="foot">
+           <div class="icon">
+           <i class="fa-brands fa-instagram fa-2xl" style="color: #ffff;"></i>
+           <i class="fa-brands fa-square-facebook fa-2xl" style="color: #ffff;"></i>
+           <i class="fa-brands fa-youtube fa-2xl" style="color: #ffff;"></i>
+           </div>
+           <div class="logofooter">
+           <img src="logo.png" width="200px" height="60px">
+           </div>
+           <div class="statement">
+           <h3>B Key Realtors is an one stop Online Real Estate Agency in Coimbatore to find your best property in Coimbatore. Our repository of data and information associated with each property will assist you make a decision and purchase the same as your assets.</h3>
+           </div>
+           <div class="details">
+            <h3><strong>Contact Us</strong></h3>
+            <h3>📞 Phone: +91 XXXXX XXXXX</h3>
+            <h3>📧 Email: support@bkeyrealtors.com</h3>
+            <h3>📍 Address: 123, Real Estate Avenue, Coimbatore, TN - 6410XX</h3>
+            </div>
+            <div class="copyright">
+            <center>
+            <h2>Copyrights © 2025 All Rights Reserved</h2>
+            </center>
+           </div>
+        </div>
+    </footer>
+</body>
+</html>
