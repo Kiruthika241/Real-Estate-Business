@@ -4,7 +4,7 @@ A responsive front-end website for a real estate business, built using HTML and 
 
 ## 🌐 Live Preview
 
-> *(Optional: Add GitHub Pages or Netlify link here if hosted)*
+> https://b-key-realtor.netlify.app/
 
 ## 📌 Features
 
@@ -42,15 +42,11 @@ Real-Estate-Business/
 - Responsive Design (for 1920×1080 resolution)
 
 ## 🙋‍♀️ Author
-Kiruthika Devi
-💼 Front-End Developer | UI Enthusiast
-🌍 Coimbatore, India
+Kiruthika Devi 
+💼 Front-End Developer | UI Enthusiast 
+🌍 Coimbatore, India. 
+💼 LinkedIn (https://www.linkedin.com/in/kiruthikadevi-g/)
 
-🔗 Portfolio (Add your portfolio link here)
-
-💼 LinkedIn (Add your LinkedIn profile link here)
-
-📸 Instagram (Optional – Add your Instagram link here if you want)
 
 
 
