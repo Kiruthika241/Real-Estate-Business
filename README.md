@@ -40,6 +40,7 @@ Real-Estate-Business/
 - HTML5
 - CSS3
 - Responsive Design (for 1920×1080 resolution)
+- Mobile View(max-width:468px)
 
 ## 🙋‍♀️ Author
 Kiruthika Devi 
